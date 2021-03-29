@@ -19,4 +19,4 @@ int main()
 	}
 
 	cout << n << endl;
-},lo;['m,l
+}
