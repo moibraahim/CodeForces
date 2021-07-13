@@ -9,27 +9,29 @@ int main()
 	int Free = 0;
 	int untreated = 0;
 	int Hired;
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++) 
+	{
 		cin >> Hired;
-		if (Hired > 0)
-		{
-			Free += Hired;
 
-		}
-		else
+		if (Hired == -1)
 		{
-			if (Free < 1) 
+			if (Free < 1)
 			{
 				untreated++;
 			}
-			else 
+			if (Free >= 1)
 			{
 				Free--;
 			}
 		}
+		if (Hired != -1)
+		{
+			Free += Hired;
+
+
+		}
 	}
 	cout << untreated << endl;
 
-	
-	
+
 }
