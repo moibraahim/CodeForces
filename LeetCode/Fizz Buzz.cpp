@@ -1,13 +1,13 @@
 class Solution
 {
 public:
+    
+      // O(N) Time Complexity
+      // O(1) Space Complexity
     vector<string> fizzBuzz(int n)
     {
-        // O(N) Time Complexity
-        // O(1) Space Complexity
-
-        vector<string> answer(n);
-        string ch;
+       vector<string> answer(n);
+       string ch;
 
 
         for (int i = 1; i <= n; i++)
