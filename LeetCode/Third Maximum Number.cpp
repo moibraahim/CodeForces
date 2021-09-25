@@ -5,6 +5,8 @@ public:
         long FirstMax = LONG_MIN, SecondMax = LONG_MIN, ThirdMax = LONG_MIN;
         for (int i=0; i<nums.size(); i++)  
         {
+            // Check if the current number is already = any max
+            // if yes then continue
         if (nums[i] == FirstMax || nums[i] == SecondMax || nums[i] == ThirdMax)
                 continue;
             
@@ -22,6 +24,7 @@ public:
                 ThirdMax = nums[i];
             }
         }
+        // If there is not third max then return the first max
         if (ThirdMax == LONG_MIN)
         {
             return FirstMax;
