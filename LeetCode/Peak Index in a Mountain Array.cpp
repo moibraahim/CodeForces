@@ -1,4 +1,4 @@
-// Could be solved in O(log n) Time Complexity using binray search
+// Could be solved in O(log n) Time Complexity using binary search
 
 
 class Solution {
